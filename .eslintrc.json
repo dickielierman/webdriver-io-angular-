@@ -1,0 +1,19 @@
+{
+  "plugins": ["wdio"],
+  "env": {
+    "es6": true,
+    "node": true,
+    "mocha": true
+  },
+  "extends": ["eslint:recommended", "plugin:wdio/recommended"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly",
+    "assert":true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": { "wdio/no-pause": "off"}
+}
