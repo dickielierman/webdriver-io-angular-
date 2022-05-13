@@ -23,12 +23,33 @@ exports.config = {
   //
   specs: ['./tests/*.spec.js'],
   // Patterns to exclude.
-  // exclude: ['./tests/*.spec.js'],
-  // suites: {
-  //   example: [
-  //     './tests/specname.spec.js',
-  //   ],
-  // },
+  exclude: ['./tests/blank.spec.js'],
+  suites: {
+    smoke: ['./tests/smoke.spec.js'],
+    login: ['./tests/login.spec.js'],
+    createMonster: ['./tests/createMonster.spec.js'],
+    createRanodomMonster: ['./tests/createRanodomMonster.spec.js'],
+    deleteMonster: ['./tests/deleteMonster.spec.js'],
+    editMonster: ['./tests/editMonster.spec.js'],
+    nav: ['./tests/nav.spec.js'],
+    randomMonsterTeam: ['./tests/randomMonsterTeam.spec.js'],
+    removeAllMonsters: ['./tests/removeAllMonsters.spec.js'],
+    sortMonsters: ['./tests/sortMonsters.spec.js'],
+    unFavoriteAll: ['./tests/unFavoriteAll.spec.js'],
+    all: [
+      './tests/smoke.spec.js',
+      './tests/login.spec.js',
+      './tests/nav.spec.js',
+      './tests/createMonster.spec.js',
+      './tests/createRanodomMonster.spec.js',
+      './tests/deleteMonster.spec.js',
+      './tests/editMonster.spec.js',
+      './tests/randomMonsterTeam.spec.js',
+      './tests/removeAllMonsters.spec.js',
+      './tests/sortMonsters.spec.js',
+      './tests/unFavoriteAll.spec.js',
+    ],
+  },
   //
   // ============
   // Capabilities
@@ -45,7 +66,7 @@ exports.config = {
   // and 30 processes will get spawned. The property handles how many capabilities
   // from the same test should run tests.
   //
-  maxInstances: 1,
+  maxInstances: 2,
   //
   // If you have trouble getting all important capabilities together, check out the
   // Sauce Labs platform configurator - a great tool to configure your capabilities:
@@ -56,7 +77,7 @@ exports.config = {
       // maxInstances can get overwritten per capability. So if you have an in-house Selenium
       // grid with only 5 firefox instances available you can make sure that not more than
       // 5 instances get started at a time.
-      maxInstances: 1,
+      maxInstances: 2,
       //
       browserName: 'chrome',
       acceptInsecureCerts: true,
@@ -73,7 +94,7 @@ exports.config = {
   // Define all options that are relevant for the WebdriverIO instance here
   //
   // Level of logging verbosity: trace | debug | info | warn | error | silent
-  logLevel: 'info',
+  logLevel: 'error',
   //
   // Set specific log levels per logger
   // loggers:
@@ -97,7 +118,7 @@ exports.config = {
   // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
   // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
   // gets prepended directly.
-  baseUrl: 'http://localhost:8080',
+  baseUrl: 'http://localhost:4200',
   //
   // Default timeout for all waitFor* commands.
   waitforTimeout: 10000,
@@ -137,7 +158,7 @@ exports.config = {
   // see also: https://webdriver.io/docs/dot-reporter
   reporters: [
     'spec',
-    // [video, { saveAllVideos: false, videoSlowdownMultiplier: 3 }],
+    // [video, { saveAllVideos: false, videoSlowdownMultiplier: 10 }],
     ['allure', { outputDir: 'allure-results', disableWebdriverStepsReporting: true, disableWebdriverScreenshotsReporting: false }],
   ],
 
@@ -201,8 +222,9 @@ exports.config = {
    * @param {Object}         browser      instance of created browser/device session
    */
   before: function () {
-    const assert = require('assert');
+    const { assert } = require('chai');
     global.assert = assert;
+    global.configBaseUrl = this.baseUrl + '/';
   },
   /**
    * Runs before a WebdriverIO command gets executed.

@@ -5,9 +5,21 @@
   "main": "index.js",
   "scripts": {
     "test": "npx wdio run ./wdio.conf.js",
+    "smoke": "npx wdio run ./wdio.conf.js --suite smoke",
+    "login": "npx wdio run ./wdio.conf.js --suite login",
+    "createMonster": "npx wdio run ./wdio.conf.js --suite createMonster",
+    "createRanodomMonster": "npx wdio run ./wdio.conf.js --suite createRanodomMonster",
+    "deleteMonster": "npx wdio run ./wdio.conf.js --suite deleteMonster",
+    "editMonster": "npx wdio run ./wdio.conf.js --suite editMonster",
+    "nav": "npx wdio run ./wdio.conf.js --suite nav",
+    "randomMonsterTeam": "npx wdio run ./wdio.conf.js --suite randomMonsterTeam",
+    "removeAllMonsters": "npx wdio run ./wdio.conf.js --suite removeAllMonsters",
+    "sortMonsters": "npx wdio run ./wdio.conf.js --suite sortMonsters",
+    "unFavoriteAll": "npx wdio run ./wdio.conf.js --suite unFavoriteAll",
+    "all-tests": "npx wdio run ./wdio.conf.js --suite all",
     "runAllureReports": "allure generate allure-results --clean",
     "openAllure": "allure open",
-    "clean-results": "rimraf allure-results allure-report"
+    "clean-results": "rimraf allure-results allure-report _results_"
   },
   "author": "",
   "license": "ISC",

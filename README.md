@@ -4,24 +4,18 @@ Sample Webdriver.IO test suite
 
 ## Test site
 
-https://github.com/dickielierman/superHeroApp
+https://github.com/dickielierman/angularApp
 See instructions for running locally
 
 # Installation
 
 npm install
 
-# to run Super Hero App Tests
+# to run tests
 
-npm run testSuperHeroApp
+npm run test
 
-npm run runAllureReportsSHA
-
-# to run Todo List App Tests
-
-npm run testTodoApp
-
-npm run runAllureReportsTDA
+see package.json for other available scripts for specific suites
 
 # to run Allure
 

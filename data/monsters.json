@@ -1,0 +1,140 @@
+[
+  {
+    "name": "Vampire",
+    "desc": "He just wants your blood.",
+    "role": "soldier",
+    "icon": "glyphicon ra ra-sword pull-right role"
+  },
+  {
+    "name": "Gremlin",
+    "desc": "Full of mischief.",
+    "role": "medic",
+    "icon": "glyphicon ra ra-health pull-right role"
+  },
+  {
+    "name": "Davy Jones",
+    "desc": "Spirit of the sea ready to collect your soul.",
+    "role": "shield",
+    "icon": "glyphicon ra ra-cracked-shield pull-right role"
+  },
+  {
+    "name": "Chupacabra",
+    "desc": "Large creature that thirsts for your blood.",
+    "role": "thief",
+    "icon": "glyphicon ra ra-kunai pull-right role"
+  },
+  {
+    "name": "Manticore",
+    "desc": "Body of a lion, head of a man, tail of a scorpion.",
+    "role": "mage",
+    "icon": "glyphicon ra ra-laser-blast pull-right role"
+  },
+  {
+    "name": "Banshee",
+    "desc": "She has a deadly scream.",
+    "role": "medic",
+    "icon": "glyphicon ra ra-health pull-right role"
+  },
+  {
+    "name": "Poltergeist",
+    "desc": "This ghost will haunt your home.",
+    "role": "shield",
+    "icon": "glyphicon ra ra-cracked-shield pull-right role"
+  },
+  {
+    "name": "Nessie",
+    "desc": "The monster of Loch Ness.",
+    "role": "mage",
+    "icon": "glyphicon ra ra-laser-blast pull-right role"
+  },
+  {
+    "name": "Jersey Devil",
+    "desc": "Head of a horse, wings like a dragon.",
+    "role": "medic",
+    "icon": "glyphicon ra ra-health pull-right role"
+  },
+  {
+    "name": "Headless Horseman",
+    "desc": "He lost his head and now he wants yours.",
+    "role": "soldier",
+    "icon": "glyphicon ra ra-sword pull-right role"
+  },
+  {
+    "name": "Zombie",
+    "desc": "These undead only follow their hunger for your flesh.",
+    "role": "thief",
+    "icon": "glyphicon ra ra-kunai pull-right role"
+  },
+  {
+    "name": "Yeti",
+    "desc": "Hidden in the snowy mountains.",
+    "role": "shield",
+    "icon": "glyphicon ra ra-cracked-shield pull-right role"
+  },
+  {
+    "name": "Mummy",
+    "desc": "You were warned not to disturb their rest.",
+    "role": "medic",
+    "icon": "glyphicon ra ra-health pull-right role"
+  },
+  {
+    "name": "Orc",
+    "desc": "Big, powerful, and ugly.",
+    "role": "thief",
+    "icon": "glyphicon ra ra-kunai pull-right role"
+  },
+  {
+    "name": "Kraken",
+    "desc": "Giant sea squid with a taste for ships.",
+    "role": "soldier",
+    "icon": "glyphicon ra ra-sword pull-right role"
+  },
+  {
+    "name": "Golem",
+    "desc": "Human made of clay.",
+    "role": "mage",
+    "icon": "glyphicon ra ra-laser-blast pull-right role"
+  },
+  {
+    "name": "Werewolf",
+    "desc": "Sometimes a man, sometimes a fearsome wolf creature.",
+    "role": "medic",
+    "icon": "glyphicon ra ra-health pull-right role"
+  },
+  {
+    "name": "Cerberus",
+    "desc": "Vicious three headed dog.",
+    "role": "soldier",
+    "icon": "glyphicon ra ra-sword pull-right role"
+  },
+  {
+    "name": "Siren",
+    "desc": "Their song will lead you to only death.",
+    "role": "shield",
+    "icon": "glyphicon ra ra-cracked-shield pull-right role"
+  },
+  {
+    "name": "Succubus",
+    "desc": "She will drain the life from any man.",
+    "role": "thief",
+    "icon": "glyphicon ra ra-kunai pull-right role"
+  },
+  {
+    "name": "Cyclops",
+    "desc": "Don't stare at his eye. It only makes him angry.",
+    "role": "soldier",
+    "icon": "glyphicon ra ra-sword pull-right role"
+  },
+  {
+    "name": "Fankenstein's Monster",
+    "desc": "Big and powerful. He just wants to be left alone.",
+    "role": "mage",
+    "icon": "glyphicon ra ra-laser-blast pull-right role"
+  },
+  {
+    "name": "Swamp Creature",
+    "desc": "He awaits you in the swamp.",
+    "role": "shield",
+    "icon": "glyphicon ra ra-cracked-shield pull-right role"
+  }
+]
